@@ -4,10 +4,6 @@
   'showIndentGuide': true
   'tabLength': 4
 'core':
-  'themes': [
-    'atom-dark-ui'
-    'atom-dark-syntax'
-  ]
   'excludeVcsIgnoredPaths': true
   'ignoredNames': [
     'target'
