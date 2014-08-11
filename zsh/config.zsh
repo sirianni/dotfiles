@@ -22,6 +22,7 @@ setopt PROMPT_SUBST
 setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt INTERACTIVE_COMMENTS
+setopt AUTO_PUSHD
 unsetopt correct
 
 autoload -U select-word-style
