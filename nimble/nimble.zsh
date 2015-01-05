@@ -1,7 +1,10 @@
-export MAVEN_HOME=/auto/share/bin/apache-maven-3.2.1
+export MAVEN_HOME=/opt/apache-maven-3.2.3
 export PATH=$PATH:$MAVEN_HOME/bin
 
-export ANT_HOME=/auto/share/build_env/apache-ant-1.7.1
+export ANT_HOME=/opt/apache-ant-1.9.4
 export PATH=$PATH:$ANT_HOME/bin
 
-export INFOSIGHT_SRC=~/src/support/infosight
+hash -d infosight=/home/esirianni/src/support/infosight
+hash -d portal=~infosight/portal
+
+alias pg='psql -h localhost -d portaldb'

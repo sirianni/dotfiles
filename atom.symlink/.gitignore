@@ -1,0 +1,7 @@
+.node-gyp
+.storage
+packages
+storage
+themes
+compile-cache
+nohup.out

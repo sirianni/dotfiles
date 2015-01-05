@@ -1,21 +1,36 @@
-'editor':
-  'fontSize': 16
-  'showInvisibles': true
-  'showIndentGuide': true
-  'tabLength': 4
-'core':
-  'excludeVcsIgnoredPaths': true
-  'ignoredNames': [
-    'target'
-  ]
-'exception-reporting':
-  'userId': 'e0dcd85d-ebb8-db3b-e468-99293f3fe820'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '359e0c8f0de9a78da225a7101939d1565e5529f5'
-'file-types':
-  'har': 'source.json'
-'whitespace':
-  'ensureSingleTrailingNewline': false
-  'removeTrailingWhitespace': false
+'global':
+  'editor':
+    'showInvisibles': true
+    'showIndentGuide': true
+    'tabLength': 4
+    'invisibles': {}
+  'core':
+    'ignoredNames': [
+      'target'
+      '.sass-cache'
+      '.hg'
+      'node_modules'
+    ]
+    'disabledPackages': [
+      'deprecation-cop'
+      'highlight-selected'
+    ]
+  'exception-reporting':
+    'userId': 'e0dcd85d-ebb8-db3b-e468-99293f3fe820'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '359e0c8f0de9a78da225a7101939d1565e5529f5'
+  'file-types':
+    'har': 'source.json'
+  'whitespace':
+    'ensureSingleTrailingNewline': false
+    'removeTrailingWhitespace': false
+  'linter':
+    'lintOnChange': false
+    'lintOnEditorFocus': false
+  'tree-view':
+    'hideIgnoredNames': true
+    'hideVcsIgnoredFiles': true
+'.dockerfile.source':
+  'editor': {}
