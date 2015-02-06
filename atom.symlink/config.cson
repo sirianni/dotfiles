@@ -1,36 +1,54 @@
-'global':
-  'editor':
-    'showInvisibles': true
-    'showIndentGuide': true
-    'tabLength': 4
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      'target'
-      '.sass-cache'
-      '.hg'
-      'node_modules'
+"*":
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    tabLength: 4
+    invisibles: {}
+    preferredLineLength: 120
+  core:
+    ignoredNames: [
+      "target"
+      ".sass-cache"
+      ".hg"
+      "node_modules"
     ]
-    'disabledPackages': [
-      'deprecation-cop'
-      'highlight-selected'
+    disabledPackages: [
+      "deprecation-cop"
+      "autocomplete"
     ]
-  'exception-reporting':
-    'userId': 'e0dcd85d-ebb8-db3b-e468-99293f3fe820'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '359e0c8f0de9a78da225a7101939d1565e5529f5'
-  'file-types':
-    'har': 'source.json'
-  'whitespace':
-    'ensureSingleTrailingNewline': false
-    'removeTrailingWhitespace': false
-  'linter':
-    'lintOnChange': false
-    'lintOnEditorFocus': false
-  'tree-view':
-    'hideIgnoredNames': true
-    'hideVcsIgnoredFiles': true
-'.dockerfile.source':
-  'editor': {}
+  "exception-reporting":
+    userId: "e0dcd85d-ebb8-db3b-e468-99293f3fe820"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "359e0c8f0de9a78da225a7101939d1565e5529f5"
+  "file-types":
+    har: "source.json"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
+  linter:
+    lintOnChange: false
+    lintOnEditorFocus: false
+    statusBar: "Show all errors"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
+  minimap:
+    plugins:
+      selection: true
+      "highlight-selected": true
+      "find-and-replace": true
+    adjustMinimapWidthToSoftWrap: false
+  "autocomplete-plus":
+    enableAutoActivation: false
+    confirmCompletion: "tab and enter"
+  "highlight-selected":
+    onlyHighlightWholeWords: true
+  "linter-jscs":
+    preset: "''"
+  "fuzzy-finder": {}
+  "linter-jshint": {}
+  "atom-beautify":
+    _analyticsUserId: "ff9283c0-80f9-4fb1-aba8-2868a1d012e2"

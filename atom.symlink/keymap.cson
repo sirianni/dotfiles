@@ -16,10 +16,11 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-
-'.editor':
-  'alt-backspace': 'editor:delete-to-beginning-of-word'
-  'ctrl-p': 'command-palette:toggle'
+'.workspace':
+    'ctrl-p': 'command-palette:toggle'
 'body':
-  'ctrl-pageup': 'pane:show-previous-item'
-  'ctrl-pagedown': 'pane:show-next-item'
+    'ctrl-pageup': 'pane:show-previous-item'
+    'ctrl-pagedown': 'pane:show-next-item'
+'.editor':
+    'alt-backspace': 'editor:delete-to-beginning-of-word'
+    'ctrl-space': 'autocomplete-plus:activate'
