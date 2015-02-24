@@ -11,6 +11,7 @@
       ".sass-cache"
       ".hg"
       "node_modules"
+      "portal"
     ]
     disabledPackages: [
       "deprecation-cop"
@@ -46,8 +47,7 @@
     confirmCompletion: "tab and enter"
   "highlight-selected":
     onlyHighlightWholeWords: true
-  "linter-jscs":
-    preset: "''"
+  "linter-jscs": {}
   "fuzzy-finder": {}
   "linter-jshint": {}
   "atom-beautify":
