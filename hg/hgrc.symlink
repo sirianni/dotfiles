@@ -2,7 +2,7 @@
 postreview = postreview --outgoing --git
 graft = graft --log
 show = log -l 1
-rebase = rebase --keepbranches
+#rebase = rebase --keepbranches
 graft-outgoing = graft --log -r "ancestors(default) & draft()"
 rebase-workdir-to-public = rebase -b . -d 'head() & branch(.) & public() & !closed()'
 
@@ -23,11 +23,14 @@ rebase =
 histedit =
 mq =
 transplant =
+purge =
+color =
+purge = 
 
 [reviewboard]
 server = https://reviewboard.nimblestorage.com/review 
 user = esirianni
-target_people = gim
+target_people = qli
 target_groups = infosight-portal-codereview
 explicit_publish_update = true
 
@@ -46,3 +49,6 @@ p4.args = $base $local $other $output
 [tortoisehg]
 editor = gedit
 vdiff = diffuse
+fontcomment = DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0
+fontdiff = DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0
+fontlog = DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0

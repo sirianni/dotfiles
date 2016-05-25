@@ -13,3 +13,66 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
+'.source.js':
+  'Backbone Model':
+    'prefix': 'bbmodel'
+    'body': """
+define(function(require) {
+
+    var Backbone = require('backbone');
+
+    return Backbone.Model.extend({
+
+        defaults: {
+            $1
+        }
+
+    });
+
+});
+    """
+  'Backbone Collection':
+    'prefix': 'bbcoll'
+    'body': """
+define(function(require) {
+
+    var Backbone = require('backbone');
+    var ${1:Model} = require('./$1');
+
+    return Backbone.Collection.extend({
+
+        model: $1
+
+    });
+
+});
+    """
+  'Marionette View':
+    'prefix': 'mnview'
+    'body': """
+define(function(require) {
+
+    var Marionette = require('marionette');
+    var tpl = require('text!./${1:View}.html');
+
+    return Marionette.${2:ItemView}.extend({
+
+        template: _.template(tpl)
+
+    });
+
+});
+    """
+# Javascript
+  'CommonJS require':
+    'prefix': 'req'
+    'body': 'var ${1:module} = require(\'./${1:module}\');'
+  'Object key — key: {...}':
+    'prefix': 'ko'
+    'body': '${1:key}: {\n\t$2\n}'
+  'Object Method':
+    'prefix': 'kf'
+    'body': '${1:methodName}: function($2) {\n\t$3\n}${4:,}'
+  'Anonymous Function':
+    'prefix': 'f'
+    'body': 'function($1) {\n\t$2\n}'

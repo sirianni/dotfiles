@@ -1,3 +1,4 @@
 
 \set PROMPT1 '%n@%m:/%/ $ '
 \pset null '<NULL>'
+

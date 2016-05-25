@@ -16,11 +16,11 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-'.workspace':
-    'ctrl-p': 'command-palette:toggle'
-'body':
+'atom-workspace':
+    'ctrl-tab': 'tab-switcher:next'
+    'ctrl-shift-tab': 'tab-switcher:previous'
     'ctrl-pageup': 'pane:show-previous-item'
     'ctrl-pagedown': 'pane:show-next-item'
+    'ctrl-shift-w': 'tabs:close-all-tabs'
 '.editor':
-    'alt-backspace': 'editor:delete-to-beginning-of-word'
     'ctrl-space': 'autocomplete-plus:activate'

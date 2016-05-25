@@ -51,5 +51,7 @@ bindkey '^[[3;5~' kill-word
 export PAGER='less'
 export LESS="-R"
 export EDITOR="vim"
+export TZ="America/New_York"
+export PDSH_RCMD_TYPE="ssh"
 
 export PATH="~/src/scripts/bin:$PATH"

@@ -1,54 +1,111 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    tabLength: 4
-    invisibles: {}
-    preferredLineLength: 120
-  core:
+  "atom-beautify":
+    general:
+      _analyticsUserId: "ff9283c0-80f9-4fb1-aba8-2868a1d012e2"
+  "atom-lint":
     ignoredNames: [
-      "target"
-      ".sass-cache"
-      ".hg"
-      "node_modules"
-      "portal"
+      null
+      "**/*"
+      "*"
     ]
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    enableAutoActivation: false
+  core:
     disabledPackages: [
       "deprecation-cop"
       "autocomplete"
+      "file-icons"
+      "gist-it"
+      "raml"
+      "language-diff"
+      "language-docker"
+      "language-rpm-spec"
+      "clipboard-history"
+      "terminal-panel"
     ]
+    ignoredNames: [
+      "addressManagerApp"
+    ]
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+  editor:
+    confirmCheckoutHeadRevision: false
+    fontFamily: "DejaVu Sans Mono"
+    fontSize: 16
+    invisibles: {}
+    lineHeight: 1.4
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  emmet: {}
   "exception-reporting":
     userId: "e0dcd85d-ebb8-db3b-e468-99293f3fe820"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "359e0c8f0de9a78da225a7101939d1565e5529f5"
   "file-types":
     har: "source.json"
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-    ensureSingleTrailingNewline: false
-    removeTrailingWhitespace: false
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder": {}
+  "gist-it":
+    newGistsDefaultToPrivate: true
+  "highlight-selected":
+    onlyHighlightWholeWords: true
   linter:
     lintOnChange: false
     lintOnEditorFocus: false
+    lintOnFly: false
     statusBar: "Show all errors"
-  "tree-view":
-    hideVcsIgnoredFiles: true
-    hideIgnoredNames: true
+    subtleLinterErrors: [
+      "jscs"
+      "jshint"
+    ]
+  "linter-jscs":
+    configPath: ".jscsrc"
+    onlyConfig: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+  metrics:
+    userId: "359e0c8f0de9a78da225a7101939d1565e5529f5"
   minimap:
-    plugins:
-      selection: true
-      "highlight-selected": true
-      "find-and-replace": true
     adjustMinimapWidthToSoftWrap: false
-  "autocomplete-plus":
-    enableAutoActivation: false
-    confirmCompletion: "tab and enter"
-  "highlight-selected":
-    onlyHighlightWholeWords: true
-  "linter-jscs": {}
-  "fuzzy-finder": {}
-  "linter-jshint": {}
-  "atom-beautify":
-    _analyticsUserId: "ff9283c0-80f9-4fb1-aba8-2868a1d012e2"
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  nuclide:
+    remoteProjectsConfig: []
+  "one-dark-ui": {}
+  "seti-ui":
+    compactView: true
+    themeColor: "Steel"
+  "spell-check": {}
+  "tab-switcher": {}
+  tabs:
+    enableVcsColoring: true
+  "terminal-panel": {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+".diff.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.source":
+  editor:
+    normalizeIndentOnPaste: "true"
+    preferredLineLength: 120
+".js.source":
+  editor:
+    preferredLineLength: 120
