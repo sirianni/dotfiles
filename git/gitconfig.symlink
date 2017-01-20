@@ -1,0 +1,15 @@
+[user]
+    name = Eric Sirianni
+    email = eric.sirianni@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+[mergetool]
+    keepBackup = false
+    autocorrect = 1
+

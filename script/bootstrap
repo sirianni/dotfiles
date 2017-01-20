@@ -127,14 +127,26 @@ link_file () {
 install_dotfiles () {
   info 'installing dotfiles'
 
-  local overwrite_all=false backup_all=false skip_all=false
-
   for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink')
   do
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
 }
+
+overwrite_all=false
+backup_all=false
+skip_all=false
+while getopts ":f" opt; do
+  case $opt in
+    f)
+      overwrite_all=true
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
 
 setup_gitconfig
 install_dotfiles
