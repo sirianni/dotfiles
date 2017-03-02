@@ -16,11 +16,19 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-'atom-workspace':
-    'ctrl-tab': 'tab-switcher:next'
-    'ctrl-shift-tab': 'tab-switcher:previous'
-    'ctrl-pageup': 'pane:show-previous-item'
-    'ctrl-pagedown': 'pane:show-next-item'
-    'ctrl-shift-w': 'tabs:close-all-tabs'
-'.editor':
-    'ctrl-space': 'autocomplete-plus:activate'
+
+"atom-workspace":
+    "ctrl-shift-w": "tabs:close-all-tabs"
+    "ctrl-tab": "tab-switcher:next"
+    "ctrl-tab ^ctrl": "unset!"
+    "ctrl-shift-tab": "tab-switcher:previous"
+    "ctrl-shift-tab ^ctrl": "unset!"
+    # 'ctrl-pageup': 'pane:show-previous-item'
+    # 'ctrl-pagedown': 'pane:show-next-item'
+"ol.tab-switcher-tab-list":
+    "^ctrl": "tab-switcher:select"
+    "^shift": "tab-switcher:select"
+    "ctrl-up": "tab-switcher:previous"
+    "ctrl-down": "tab-switcher:next"
+".editor":
+    "ctrl-space": "autocomplete-plus:activate"

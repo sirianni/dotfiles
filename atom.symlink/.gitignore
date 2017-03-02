@@ -8,3 +8,4 @@ compile-cache
 nohup.out
 projects.cson
 blob-store
+recovery

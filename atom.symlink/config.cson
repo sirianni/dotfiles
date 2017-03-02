@@ -15,20 +15,17 @@
     disabledPackages: [
       "deprecation-cop"
       "autocomplete"
-      "file-icons"
-      "gist-it"
-      "raml"
-      "language-diff"
-      "language-docker"
-      "language-rpm-spec"
-      "clipboard-history"
       "terminal-panel"
+      "atom-hg"
     ]
     ignoredNames: [
-      "addressManagerApp"
+      "**/WebContent/dist"
+      "node_modules"
+      ".babel-cache"
     ]
+    telemetryConsent: "limited"
     themes: [
-      "seti-ui"
+      "one-dark-ui"
       "monokai"
     ]
   editor:
@@ -82,10 +79,10 @@
       selectionDecorationsZIndex: 0
   nuclide:
     remoteProjectsConfig: []
-  "one-dark-ui": {}
+  "one-dark-ui":
+    layoutMode: "Compact"
   "seti-ui":
     compactView: true
-    themeColor: "Steel"
   "spell-check": {}
   "tab-switcher": {}
   tabs:
@@ -109,3 +106,8 @@
 ".js.source":
   editor:
     preferredLineLength: 120
+".source.twiki":
+  editor:
+    preferredLineLength: 120
+    softWrap: true
+    tabLength: 3

@@ -8,6 +8,7 @@ precmd() {
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable hg git
+zstyle ':vcs_info:*' disable-patterns "$HOME/rtphome(|/*)"
 zstyle ':vcs_info:hg:*' hgrevformat "%r:%h"
 zstyle ':vcs_info:hg:*' branchformat "%b"
 zstyle ':vcs_info:hg:*' get-revision true

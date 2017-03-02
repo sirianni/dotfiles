@@ -27,6 +27,7 @@ setopt complete_in_word
 setopt interactive_comments
 setopt auto_pushd
 setopt pushd_minus
+setopt rc_quotes
 unsetopt correct
 
 autoload -U select-word-style

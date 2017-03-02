@@ -16,7 +16,7 @@ support@esirianni-sjc = http://ln-esirianni-sjc:8000
 [extensions]
 reviewboard = /opt/nimble/share/reviewboard/hg
 shelve =
-extdiff = 
+extdiff =
 hgk =
 graphlog =
 rebase =
@@ -25,22 +25,24 @@ mq =
 transplant =
 purge =
 color =
-purge = 
+purge =
 
 [reviewboard]
-server = https://reviewboard.nimblestorage.com/review 
+server = https://reviewboard.nimblestorage.com/review
+#server = https://reviewboard-new.lab.nimblestorage.com/r
 user = esirianni
-target_people = qli
+target_people = mdavis
 target_groups = infosight-portal-codereview
 explicit_publish_update = true
 
 [extdiff]
-cmd.kdiff3 = kdiff3
-cmd.meld = meld
+cmd.kdiff3 =
+cmd.meld =
+cmd.diffuse =
 
 [merge-tools]
 # change this to False if you're don't trust hg's internal merge
-p4.premerge = True 
+p4.premerge = True
 p4.executable = /opt/p4v/bin/p4merge
 p4.gui = True
 p4.args = $base $local $other $output
