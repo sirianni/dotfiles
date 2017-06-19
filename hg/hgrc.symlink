@@ -26,6 +26,8 @@ transplant =
 purge =
 color =
 purge =
+convert =
+hggit =
 
 [reviewboard]
 server = https://reviewboard.nimblestorage.com/review
