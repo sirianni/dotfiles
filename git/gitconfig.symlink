@@ -1,6 +1,7 @@
 [user]
     name = Eric Sirianni
-    email = eric.sirianni@gmail.com
+    email = esirianni@nimblestorage.com
+    #email = eric.sirianni@gmail.com
 [color]
     diff = auto
     status = auto
@@ -9,14 +10,26 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+[merge]
+    renamelimit = 999999
+    tool = p4merge
 [mergetool]
     keepBackup = false
     autocorrect = 1
-
+[mergetool "p4merge"]
+    cmd = /opt/p4v/bin/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    trustExitCode = false
+[diff]
+    tool = diffuse
 [push]
-	default = simple
+    default = simple
+[pull]
+    rebase = true
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-    revert = checkout --
+    co = checkout
+    ci = commit
+    st = status
+    newbranch = checkout -B
+[branch]
+    autoSetupMerge = always
+    autoSetupRebase = always
