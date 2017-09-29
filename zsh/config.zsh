@@ -57,3 +57,6 @@ export TZ="America/New_York"
 export PDSH_RCMD_TYPE="ssh"
 
 export PATH="~/src/scripts/bin:$PATH"
+
+highlighting=/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f $highlighting ]] && source $highlighting
