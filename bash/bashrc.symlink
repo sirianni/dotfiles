@@ -17,7 +17,6 @@ export _LOG_WARN=${TRUE}
 export _LOG_ERROR=${TRUE}
 
 export _OS=$(uname -s)
-export HOST=$(hostname)
 
 shopt -s histappend
 export HISTCONTROL="ignoredups"

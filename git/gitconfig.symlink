@@ -1,6 +1,6 @@
 [user]
     name = Eric Sirianni
-    email = esirianni@nimblestorage.com
+    email = eric.sirianni@hpe.com
     #email = eric.sirianni@gmail.com
 [color]
     diff = auto
@@ -31,5 +31,5 @@
     st = status
     newbranch = checkout -B
 [branch]
-    autoSetupMerge = always
-    autoSetupRebase = always
+    autoSetupMerge = true
+    autoSetupRebase = remote

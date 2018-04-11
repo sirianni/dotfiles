@@ -14,7 +14,7 @@ support@hg = ssh://hg@hg.nimblestorage.com/dev/support
 support@esirianni-sjc = http://ln-esirianni-sjc:8000
 
 [extensions]
-reviewboard = /opt/nimble/share/reviewboard/hg
+#reviewboard = /opt/nimble/share/reviewboard/hg
 shelve =
 extdiff =
 hgk =
