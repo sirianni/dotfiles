@@ -27,7 +27,7 @@ purge =
 color =
 purge =
 convert =
-hggit =
+#hggit =
 
 [reviewboard]
 server = https://reviewboard.nimblestorage.com/review
