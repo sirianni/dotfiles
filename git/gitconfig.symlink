@@ -1,7 +1,7 @@
 [user]
     name = Eric Sirianni
-    email = eric.sirianni@hpe.com
-    #email = eric.sirianni@gmail.com
+    email = eric.sirianni@gmail.om
+    #email = sirianni@confluent.io
 [color]
     diff = auto
     status = auto
