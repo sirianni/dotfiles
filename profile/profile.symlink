@@ -26,5 +26,16 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Set scaling factor for QT apps for HiDPI displays
-export QT_SCALE_FACTOR=2.0
+res=$(xrandr |
+      grep -o "current[^,]\+" |  # Get "current [pan]" section
+      cut -c8- |                 # Remove "current" (first 8 chars)
+      tr -d "[:space:]")         # Remove all whitespace
+xRes=$(cut -d "x" -f 1 <<< $res)
+yRes=$(cut -d "x" -f 2 <<< $res)
+
+if (( $yRes >  2000 )) ; then
+    # Set scaling factor for QT apps for HiDPI displays
+    export QT_SCALE_FACTOR=2.0
+fi
+
+
