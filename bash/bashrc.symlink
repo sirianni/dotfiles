@@ -68,14 +68,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Use this to force flush of bash history after each command
 #export PROMPT_COMMAND='history -a'
 
-export MAVEN_HOME=/auto/share/bin/apache-maven-3.2.1
-export PATH=$PATH:$MAVEN_HOME/bin
-
-export ANT_HOME=/auto/share/build_env/apache-ant-1.7.1
-export PATH=$PATH:$ANT_HOME/bin
-
-export INFOSIGHT_SRC=~/src/support/infosight
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/home/esirianni/.sdkman"
 #[[ -s "/home/esirianni/.sdkman/bin/sdkman-init.sh" ]] && source "/home/esirianni/.sdkman/bin/sdkman-init.sh"
