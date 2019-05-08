@@ -18,7 +18,6 @@ setopt hist_verify
 setopt share_history # share history between sessions
 setopt extended_history # add timestamps to history
 setopt append_history # adds history
-setopt inc_append_history share_history  # adds history incrementally and share it across sessions
 setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
 setopt prompt_subst

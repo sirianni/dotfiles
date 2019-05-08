@@ -1,7 +1,6 @@
 [user]
     name = Eric Sirianni
     email = eric.sirianni@gmail.com
-    #email = sirianni@confluent.io
 [color]
     diff = auto
     status = auto
@@ -9,7 +8,7 @@
     ui = true
 [core]
     excludesfile = ~/.gitignore
-    editor = vim
+	editor = micro
 [merge]
     renamelimit = 999999
     tool = p4merge
@@ -27,9 +26,12 @@
     rebase = true
 [alias]
     co = checkout
-    ci = commit
     st = status
+    fp = push --force-with-lease
     newbranch = checkout -B
 [branch]
     autoSetupMerge = true
     autoSetupRebase = remote
+
+[includeIf "gitdir:~/src/confluentinc/**"]
+    path = ~/src/confluentinc/gitconfig

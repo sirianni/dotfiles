@@ -1,1 +1,3 @@
-prefix = /home/sirianni/npm
+prefix=/home/sirianni/npm
+@confluent:registry=https://nexus.confluent.io/repository/npm-internal/
+//nexus.confluent.io/repository/npm-internal/:_authToken=NpmToken.7b84cd77-c882-3909-9688-d450b59398ef
