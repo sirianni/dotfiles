@@ -1,0 +1,9 @@
+.envrc
+
+# JetBrains
+*.iml
+.idea
+*.ipr
+*.iws
+
+.vscode

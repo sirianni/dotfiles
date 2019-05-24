@@ -7,8 +7,8 @@
     branch = auto
     ui = true
 [core]
-    excludesfile = ~/.gitignore
-	editor = micro
+    excludesfile = ~/dotfiles/git/global.gitignore
+    editor = vim
 [merge]
     renamelimit = 999999
     tool = p4merge
