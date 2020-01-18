@@ -1,0 +1,5 @@
+#Modified by Testcontainers
+#Mon Dec 09 12:31:02 EST 2019
+docker.client.strategy=org.testcontainers.dockerclient.EnvironmentAndSystemPropertyClientProviderStrategy
+checks.disable=true
+testcontainers.reuse.enable=true
