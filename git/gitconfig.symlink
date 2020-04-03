@@ -35,3 +35,6 @@
 
 [includeIf "gitdir:~/src/confluentinc/**"]
     path = ~/src/confluentinc/gitconfig
+
+[ghq]
+    root = ~/src

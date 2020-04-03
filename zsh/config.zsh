@@ -3,9 +3,8 @@ export CLICOLOR=true
 
 eval "$(lesspipe)"
 
-fpath=($DOTFILES/functions $fpath)
-
-autoload -U $DOTFILES/functions/*(:t)
+# fpath=($DOTFILES/functions $fpath)
+# autoload -U $DOTFILES/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -36,18 +35,22 @@ select-word-style bash
 #   like: git comm-[tab]
 setopt complete_aliases
 
-zle -N newtab
-
-
 # emacs mode
-bindkey -e
+# bindkey -e
+
+bindkey '^K' kill-line
 bindkey ';5D' backward-word
 bindkey ';5C' forward-word
 bindkey '^[[5D' backward-word
 bindkey '^[[5C' forward-word
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
-bindkey '^[[3;5~' kill-word
+
+bindkey '^[[3;3~' kill-word       # Alt-Delete
+bindkey '^[[3;5~' kill-word       # Ctrl-Delete
+bindkey '\ed' kill-word           # Alt-D
+bindkey '^H' backward-kill-word   # Ctrl-Delete
+bindkey '^[^?' backward-kill-word # Alt-Delete
 
 export PAGER='less'
 export LESS="-R"
