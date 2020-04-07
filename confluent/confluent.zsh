@@ -1,7 +1,5 @@
 hash -d confluent=$HOME/src/github.com/confluentinc
 
-alias avro='java -jar /opt/avro/avro-tools-1.8.2.jar'
-
 cdpath=(. $HOME/src/github.com/confluentinc)
 
 ONELOGIN_DEVICE_ID=981044

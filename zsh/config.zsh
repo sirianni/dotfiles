@@ -1,7 +1,7 @@
 eval "$(dircolors)"
 export CLICOLOR=true
 
-eval "$(lesspipe)"
+eval "$(lesspipe.sh)"
 
 # fpath=($DOTFILES/functions $fpath)
 # autoload -U $DOTFILES/functions/*(:t)
@@ -34,23 +34,6 @@ select-word-style bash
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
-
-# emacs mode
-# bindkey -e
-
-bindkey '^K' kill-line
-bindkey ';5D' backward-word
-bindkey ';5C' forward-word
-bindkey '^[[5D' backward-word
-bindkey '^[[5C' forward-word
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
-
-bindkey '^[[3;3~' kill-word       # Alt-Delete
-bindkey '^[[3;5~' kill-word       # Ctrl-Delete
-bindkey '\ed' kill-word           # Alt-D
-bindkey '^H' backward-kill-word   # Ctrl-Delete
-bindkey '^[^?' backward-kill-word # Alt-Delete
 
 export PAGER='less'
 export LESS="-R"
