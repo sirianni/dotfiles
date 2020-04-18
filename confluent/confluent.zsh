@@ -8,6 +8,6 @@ OKTA_LASTPASS=true
 
 CC_DOTFILES_BETA=true
 CC_DOTFILES_ALPHA=true
-source ~confluent/cc-dotfiles/caas.sh
+[ -f ~confluent/cc-dotfiles/caas.sh ] && source ~confluent/cc-dotfiles/caas.sh
 
 PREFERRED_BASTION=0
