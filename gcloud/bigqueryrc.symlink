@@ -1,0 +1,6 @@
+--project_id=datascience-222717
+
+[query]
+--use_legacy_sql=false
+--max_rows=100
+--maximum_bytes_billed=1000000000

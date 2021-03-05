@@ -7,11 +7,9 @@ caption always "$LOGNAME@%H |  %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 
 startup_message off
 defscrollback 1000
-shell bash
+shell zsh
 
 vbell on				# default: off
-vbell_msg "   -- Ring, Ring!! --   "	# default: "Wuff,Wuff!!"
-
 
 ########################
 ### Key bindings, probably won't work unless on console

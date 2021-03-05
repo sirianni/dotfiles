@@ -109,6 +109,13 @@ install_dotfiles () {
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
+
+  # Symlink subdirectories to ~/.config/
+  for src in $(ls "$DOTFILES_ROOT/xdg-config")
+  do
+    dst="$HOME/.config/$(basename ${src})"
+    link_file "$DOTFILES_ROOT/xdg-config/$src" "$dst"
+  done
 }
 
 overwrite_all=false

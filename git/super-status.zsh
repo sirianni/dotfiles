@@ -1,3 +1,5 @@
+ZSH_THEME_GIT_PROMPT_CACHE=true
+
 # To install source this file from your .zshrc file
 
 # see documentation at http://linux.die.net/man/1/zshexpn

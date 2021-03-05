@@ -19,6 +19,7 @@ setopt extended_history # add timestamps to history
 setopt append_history # adds history
 setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
+setopt hist_ignore_space
 setopt prompt_subst
 setopt correct
 setopt complete_in_word
@@ -37,7 +38,7 @@ setopt complete_aliases
 
 export PAGER='less'
 export LESS="-R"
-export EDITOR="vim"
+export EDITOR="micro"
 export TZ="America/New_York"
 export PDSH_RCMD_TYPE="ssh"
 
@@ -45,3 +46,5 @@ export PATH="~/src/scripts/bin:$PATH"
 
 highlighting=/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -f $highlighting ]] && source $highlighting
+
+zstyle ':completion:*:*:-command-:*:*' ignored-patterns 'kubectl-*'

@@ -8,7 +8,7 @@
     ui = true
 [core]
     excludesfile = ~/dotfiles/git/global.gitignore
-    editor = vim
+    editor = micro
 [merge]
     renamelimit = 999999
     tool = p4merge
@@ -33,8 +33,8 @@
     autoSetupMerge = true
     autoSetupRebase = remote
 
-[includeIf "gitdir:~/src/confluentinc/**"]
-    path = ~/src/confluentinc/gitconfig
+[includeIf "gitdir:~/src/github.com/confluentinc/**"]
+    path = ~/src/github.com/confluentinc/gitconfig
 
 [ghq]
     root = ~/src
